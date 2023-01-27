@@ -15,6 +15,6 @@ ___
 
 to reset timer just press "Reset" button and start from the begging
 
-/Users/antonina/Desktop/Simulator Screen Recording - iPhone 14 - 2023-01-27 at 23.03.02.mp4
+
 
 
