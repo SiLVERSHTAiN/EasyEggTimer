@@ -7,7 +7,7 @@
 - Exctension
 ___
 
-##Here is three options: 
+## Here is three options: 
 
 - Easy which equals 5 minutes or 300 seconds
 - Meduim which equals 7 minutes or 420 seconds

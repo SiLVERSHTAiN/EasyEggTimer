@@ -19,21 +19,6 @@ extension UIView {
                                  height: height)
         addSubview(separator)
     }
-//    добавить моргание кнопки, по аналогии с системными
-//    func makeSystem(_ button: UIButton) {
-//        button.addTarget(self, action: #selector(handleIn), for: [
-//            .touchDown,
-//            .touchDragInside
-//        ])
-//        
-//        button.addTarget(self, action: #selector(handleOut), for: [
-//            .touchUpInside,
-//            .touchDragOutside,
-//            .touchUpOutside,
-//            .touchDragExit,
-//            .touchCancel
-//        ])
-//    }
     
     @objc func handleIn() {
         UIView.animate(withDuration: 0.15) { self.alpha = 0.55 }

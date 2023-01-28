@@ -43,8 +43,11 @@ class ButtonsView: BaseView {
         let button = UIButton()
         button.makeSystem(button)
         button.setTitle("RESET", for: .normal)
+        button.setTitleColor(Resources.Colors.active, for: .normal)
         button.titleLabel?.font = Resources.Fonts.helveticaRegular(with: 25)
-        button.backgroundColor = .systemBlue
+        button.backgroundColor = .clear
+        button.layer.borderColor = Resources.Colors.active.cgColor
+        button.layer.borderWidth = 2
         button.layer.cornerRadius = 10
         return button
     }()
@@ -94,7 +97,7 @@ extension ButtonsView {
             buttonStack.centerXAnchor.constraint(equalTo: eggLabel.centerXAnchor),
             buttonStack.widthAnchor.constraint(equalToConstant: 300),
             buttonStack.heightAnchor.constraint(equalToConstant: 120),
-            buttonStack.bottomAnchor.constraint(equalTo: resetButton.topAnchor, constant: -20),
+            buttonStack.bottomAnchor.constraint(equalTo: resetButton.topAnchor, constant: -30),
             
             resetButton.centerXAnchor.constraint(equalTo: eggLabel.centerXAnchor),
             resetButton.heightAnchor.constraint(equalToConstant: 48),

@@ -56,13 +56,22 @@ extension TimerVC {
         buttonsView.resetButton.addAction(UIAction { [self] _ in self.resetButtonTapped(buttonsView.resetButton)}, for: .touchUpInside)
     }
     
+    //TODO: добавить деактивацию других кнопок
+    
     func buttonTapped(_ sender: UIButton) {
         guard let button = sender as? Button else { return }
         timerView.timerDuration = Double(button.tag)
         timerView.startTimer()
+        
+        for button in buttonsView.buttonsArray {
+            button.isEnabled = false
+        }
     }
     
     func resetButtonTapped(_ sender: UIButton) {
         timerView.stopTimer()
+        buttonsView.buttonsArray.forEach({
+            $0.isEnabled = true
+        })
     }
 }

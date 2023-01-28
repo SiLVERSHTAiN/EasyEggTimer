@@ -9,6 +9,8 @@ import UIKit
 
 class Button: UIButton {
     
+    //TODO: Добавить при активации кнопки, чтобы она подсвечивалась синим
+    
     let buttonLayer = CAShapeLayer()
     
     init(image: UIImage, wigth: CGFloat, tag: Int) {
